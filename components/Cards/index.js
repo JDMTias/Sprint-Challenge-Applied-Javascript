@@ -18,3 +18,12 @@
 // </div>
 //
 // Use your function to create a card for each of the articles and add the card to the DOM.
+
+function articleMaker (obj) {
+
+    const cardDiv = document.createElement('div')
+    const headlineDiv = document.createElement('div')
+    const authorDiv = document.createElement('div')
+    const 
+
+}

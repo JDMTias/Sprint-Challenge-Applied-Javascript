@@ -50,9 +50,34 @@ function articleCont(data) {
   addClass(imageCont, "img-container");
   addClass(author, "author");
 
-  headline.textContext = data.headline;
+  headline.textContent = data.headline;
   authorImg.src = data.authorPhoto;
-  name.textContext = `By ${data.authorname}`;
+  name.textContent = `By ${data.authorName}`;
 
   return card;
 }
+
+axios.get('https://lambda-times-backend.herokuapp.com/articles')
+    .then((response) => {
+        console.log(response);
+        const title = response.data.articles;
+        console.log(title);
+        const subject = Object.keys(title);
+        console.log(title);
+
+        subject.forEach((key) =>{
+            console.log(key)
+            const values = response.data.articles[key]
+            values.forEach(data => {
+                console.log(data)
+                const article = articleCont(data)
+                console.log(article)
+
+                document.querySelector('.cards-container').appendChild(article)
+            })
+        })
+    })
+
+    .catch((error)=> {
+        console.log(error);
+    })

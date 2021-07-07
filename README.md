@@ -29,14 +29,23 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead.
 
 1. What is the DOM?
+  
+    Dom  is an acronym for Document Object Model, its an object representation of the html elements of a webpage. It allows us to interact with and manipulate the page, changing structure, syling and content.
 
 2. What is an event?
 
+    Any user intetraction with the site, like a click, moving the mouse, scrolling, pressing a key etc.
+
 3. What is an event listener?
 
+    it listens for a specific event then runs whatever it needs to run, maybe you click on a title and then it turns red once you click on it, this event listener was listening for a click in the Title specifically.
+
 4. Why would we convert a NodeList into an Array?
+    Althouhg NodeList is "array-like" it is not an array and therefore you can't manipulate it like we would an array, we would want to convert it so we could use array methods as well as prototype methods  
 
 5. What is a component?
+
+    small yet re-usable set of code that allows you to keep your code dry, prevents "spaghetti code" 
 
 ### Git Set up
 
@@ -49,11 +58,11 @@ Edit this document to include your answers after each question. Make sure to lea
 
 Your finished project must include all of the following requirements:
 
-* [ ] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the HTML file itself.
+* [x] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the HTML file itself.
 
-* [ ] Following the instructions in the `Header/index.js` file, create the Header component.
+* [x] Following the instructions in the `Header/index.js` file, create the Header component.
 
-* [ ] Following the instructions in the `Tabs/index.js` file, create individual Tabs components.
+* [x] Following the instructions in the `Tabs/index.js` file, create individual Tabs components.
 
 * [ ] Following the instructions in the `Cards/index.js` file, create individual Cards components.
 
